@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.env
+*.log
+.pytest_cache/
+migrations/
+
+# Node
+node_modules/
+dist/
+build/
+npm-debug.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
