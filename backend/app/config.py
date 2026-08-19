@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     app_name: str = "Todo list"
     debug: bool = True
     database_url: str = os.getenv("DATABASE_URL", "postgresql+asyncpg://postgres:postgres@localhost:5432/task_db")
-redis_url: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
+    redis_url: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
     cache_ttl_seconds: int = 1800
     cache_tasks_key: str ="cache:tasks_list"
     cors_origins: Union[List[str], str] = [
